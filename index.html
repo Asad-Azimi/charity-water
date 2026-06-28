@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Drop Dash</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <header class="game-header">
+      <p class="brand-name">charity: water</p>
+      <h1>Water Drop Dash</h1>
+      <p class="game-instructions">
+        Move the bucket to catch clean water drops. Avoid dirty drops. Collect 20 clean drops before time runs out!
+      </p>
+    </header>
+
+    <div class="stats">
+      <p>Clean Drops: <span id="score">0</span></p>
+      <p>Goal: <span id="goal">20</span></p>
+      <p>Time Left: <span id="timer">30</span>s</p>
+    </div>
+
+    <div id="message" class="message">Press Start Game to begin.</div>
+
+    <div id="game-area" class="game-area">
+      <div id="bucket" class="bucket" aria-label="water bucket">🪣</div>
+    </div>
+
+    <div class="controls">
+      <button id="move-left" class="move-btn" type="button">← Left</button>
+      <button id="start-game" type="button">Start Game</button>
+      <button id="reset-game" type="button">Reset</button>
+      <button id="move-right" class="move-btn" type="button">Right →</button>
+    </div>
+
+    <p class="keyboard-help">Keyboard: use the left and right arrow keys to move.</p>
+
+    <footer>
+      <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">Learn more about charity: water</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
